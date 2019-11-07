@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>It's The Choo Choo Train</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+          <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap CDN-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Firebase References -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    </head>
+    <body>
+     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="card bg-dark text-white one-hunnid">
+                    <img src="assets/photos/train.png" class="card-img img" alt="...">
+                    <div class="card-img-overlay">
+                      <h1 class="card-title text-center google-font">Train Schedule</h1>
+                      <p class="card-text text-center google-font">Look below, See where you'll go!</p>
+                    </div>
+                  </div>
+                 </div> 
+       </div>
+       
+       <div class="row m-1">
+           <div class="col-md-2"></div>
+           <div class="col-md-8">
+                <table class="table google-font">
+                        <thead>
+                          <tr>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency(min)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                          </tr>
+                        </thead>
+                        <tbody id="row">
+                            <tr class="table-info">
+
+
+
+
+                            
+                            </tr>
+                          </tbody>
+                      </table>
+           </div>
+        
+           <div class="col-md-2"></div>
+        </div>
+        <div class="row m-1">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                        <form>
+                                <div class="form-group">
+                                  <label for="formGroupExampleInput">Example label</label>
+                                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                                </div>
+                                <div class="form-group">
+                                  <label for="formGroupExampleInput2">Another label</label>
+                                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                                </div>
+                                <button type="submit" class="btn btn-info mb-2">Submit</button>
+                              </form>
+                </div>
+                <div class="col-md-2"></div> 
+        </div>
+       </div>
+        <script src="assets/javascript/app.js" async defer></script>
+    </body>
+</html>
