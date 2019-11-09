@@ -18,6 +18,28 @@ firebase.initializeApp(firebaseConfig);
 //variable to use firebase database
 var database= firebase.database();
 
+
+//event listener
+$(".btn").on("click", function(event){
+    event.preventDefault();
+
+    var trainName=$("#train-name").val().trim();
+    var destination=$("#destination").val().trim();
+    var firstTrainTime=$("#first-train-time").val().trim();
+    var frequencyMin=$("#frequency").val().trim();
+   
+
+    $("#row").append('<tr>'+ '<td>'+ trainName+ '</td>'+ '<td>'+ destination+ '</td>'+ '<td>'+ frequencyMin+ '</td>'+ '<td>'+ firstTrainTime+ '</td>'+ '<td>'+ " " + '</td>'+'</tr>')
+
+    database.ref().push({
+        trainName,
+        destination,
+        firstTrainTime,
+        frequencyMin
+    })
+})
+
+
 //add rows via user input 
 
 //push rows to firebase database.ref

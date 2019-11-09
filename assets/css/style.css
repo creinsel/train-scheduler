@@ -13,3 +13,19 @@ height:20rem;
 .google-font{
     font-family: 'Oswald', sans-serif;
 }
+
+#train-name{
+    font-weight:normal;
+}
+
+#destination{
+    font-weight:normal;
+}
+
+#first-train-time{
+    font-weight:normal;
+}
+
+#frequency{
+    font-weight:normal;
+}
