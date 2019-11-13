@@ -36,7 +36,14 @@
                   </div>
                  </div> 
        </div>
-       
+       <div class="row m-1">
+           <div class="col-md-5"></div>
+           <div class="col-md-4" ><h3 class="google-font">Current Time</h3> 
+                <div class="col-md-1"></div>
+                <div class="col-md-11"id="tic-toc"></div>
+                </div>
+           <div class="col-md-3"></div>
+       </div>
        <div class="row m-1">
            <div class="col-md-2"></div>
            <div class="col-md-8">
@@ -46,7 +53,7 @@
                             <th>Train Name</th>
                             <th>Destination</th>
                             <th>Frequency(min)</th>
-                            <th>Next Arrival</th>
+                            <th>Next Arrival(Military Time)</th>
                             <th>Minutes Away</th>
                           </tr>
                         </thead>
@@ -90,7 +97,7 @@
                                   <input type="text" class="form-control" id="destination" placeholder="Where am I going?">
                                 </div>
                                 <div class="form-group">
-                                        <label for="formGroupExampleInput">First Train Time</label>
+                                        <label for="formGroupExampleInput">First Train Time (Military Time)</label>
                                         <input type="text" class="form-control" id="first-train-time" placeholder="What time am I coming?">
                                       </div>
                                       <div class="form-group">

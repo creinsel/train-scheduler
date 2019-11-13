@@ -18,15 +18,22 @@ firebase.initializeApp(firebaseConfig);
 //variable to use firebase database
 var database= firebase.database();
 
+var trainName="";
+var destination="";
+var firstTrainTime="";
+var frequencyMin="";
+
+var time= moment().format('LTS')
+$("#tic-toc").html(time);
 
 //event listener
 $(".btn").on("click", function(event){
     event.preventDefault();
 
-    var trainName=$("#train-name").val().trim();
-    var destination=$("#destination").val().trim();
-    var firstTrainTime=$("#first-train-time").val().trim();
-    var frequencyMin=$("#frequency").val().trim();
+    trainName=$("#train-name").val().trim();
+    destination=$("#destination").val().trim();
+    firstTrainTime=$("#first-train-time").val().trim();
+    frequencyMin=$("#frequency").val().trim();
    
 
     $("#row").append('<tr>'+ '<td>'+ trainName+ '</td>'+ '<td>'+ destination+ '</td>'+ '<td>'+ frequencyMin+ '</td>'+ '<td>'+ firstTrainTime+ '</td>'+ '<td>'+ " " + '</td>'+'</tr>')
