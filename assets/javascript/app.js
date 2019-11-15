@@ -91,9 +91,13 @@ console.log("min away"+ " "+minAway);
 
 var nextArrival= moment().add(minAway, "minutes");
 
+console.log("next arrival"+" "+ nextArrival);
+
 var display= moment(nextArrival).format("hh:mm");
-    
-$("#row").append('<tr>'+ '<td>'+ trainName+ '</td>'+ '<td>'+ destination+ '</td>'+ '<td>'+ frequencyMin+ '</td>'+ '<td>'+ firstTrainTime+ '</td>'+ '<td>'+ minAway + '</td>'+'</tr>');
+ console.log(display); 
+console.log("*****************************************")
+//add row
+$("#row").append('<tr>'+ '<td>'+ train+ '</td>'+ '<td>'+ dest+ '</td>'+ '<td>'+ frequency+ '</td>'+ '<td>'+ trainTime+ '</td>'+ '<td>'+ minAway + '</td>'+'</tr>');
 
 
 
