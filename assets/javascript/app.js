@@ -50,6 +50,11 @@ $(".btn").on("click", function(event){
         time,
     })
 
+    $("#train-name").val("");
+    $("#destination").val("");
+    $("#first-train-time").val("");
+    $("#frequency").val("");
+   
    
    
 });
@@ -97,7 +102,7 @@ var display= moment(nextArrival).format("hh:mm");
  console.log(display); 
 console.log("*****************************************")
 //add row
-$("#row").append('<tr>'+ '<td>'+ train+ '</td>'+ '<td>'+ dest+ '</td>'+ '<td>'+ frequency+ '</td>'+ '<td>'+ trainTime+ '</td>'+ '<td>'+ minAway + '</td>'+'</tr>');
+$("#row").append('<tr>'+ '<td>'+ train+ '</td>'+ '<td>'+ dest+ '</td>'+ '<td>'+ frequency+ '</td>'+ '<td>'+ display+ '</td>'+ '<td>'+ minAway + '</td>'+'</tr>');
 
 
 
